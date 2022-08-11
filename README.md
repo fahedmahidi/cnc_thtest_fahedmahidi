@@ -1,4 +1,7 @@
-# Don't forget to install the dependencies
+# How to run this project locally
+
+## Don't forget to install the dependencies
+
 ### `npm install`
 
 ## Available Scripts
