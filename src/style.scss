@@ -1,0 +1,44 @@
+@import "vanilla-framework";
+@include vanilla;
+
+$accent-color: #4B9DBA;
+
+.App{
+ width: 100% ;
+ padding: 30px;
+}
+
+
+.p-navigation{
+    background-color: #2c001e;
+}
+
+h3{
+    color: $accent-color;
+    font-weight: 300;
+}
+
+a{
+    color: $accent-color;
+    &:hover{
+        color: $accent-color;
+    }
+   
+}
+
+.p-muted-heading {
+    font-size: 15px;
+    color:#52575C;
+}
+
+.p-card{
+    border: none;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.37);
+    border-radius: 2px;
+    border-top: 3px solid #A77D9F;
+}
+
+.p-card__content{
+    height: 150px;
+}
+
