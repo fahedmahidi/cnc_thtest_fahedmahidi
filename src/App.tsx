@@ -12,47 +12,45 @@ function App() {
   }, []);
 
   return (
-    <>
-      <main>
-        <header id="navigation" className="p-navigation">
+    <main>
+      <header id="navigation" className="p-navigation">
+        <div className="p-navigation__row">
           <div className="p-navigation__row">
-            <div className="p-navigation__row">
-              <div className="p-navigation__banner">
-                <div className="p-navigation__logo">
-                  <a className="p-navigation__item" href="https://canonical.com">
-                    <img
-                      className="p-navigation__image"
-                      src="https://assets.ubuntu.com/v1/2eec3fd9-logo.svg"
-                      alt=""
-                      width="115"
-                    />
-                  </a>
-                </div>
+            <div className="p-navigation__banner">
+              <div className="p-navigation__logo">
+                <a className="p-navigation__item" href="https://canonical.com">
+                  <img
+                    className="p-navigation__image"
+                    src="https://assets.ubuntu.com/v1/2eec3fd9-logo.svg"
+                    alt=""
+                    width="115"
+                  />
+                </a>
               </div>
             </div>
           </div>
-        </header>
-        <div className="row">
-          <h1>Take Home Test - Fahed Mahidi</h1>
         </div>
+      </header>
+      <div className="row">
+        <h1>Take Home Test - Fahed Mahidi</h1>
+      </div>
 
-        <div className="row u-equal-height u-clearfix">
-          {blogPosts.map((item: any, index: any) => {
-            return (
-              <BlogPost
-                title={item.title.rendered}
-                image={item.featured_media}
-                author={item._embedded.author[0].name}
-                date={item.date}
-                link={item.link}
-                authLink={item._embedded.author[0].link}
-                key={index}
-              />
-            );
-          })}
-        </div>
-      </main>
-    </>
+      <div className="row u-equal-height u-clearfix">
+        {blogPosts.map((item: any, index: any) => {
+          return (
+            <BlogPost
+              title={item.title.rendered}
+              image={item.featured_media}
+              author={item._embedded.author[0].name}
+              date={item.date}
+              link={item.link}
+              authLink={item._embedded.author[0].link}
+              key={index}
+            />
+          );
+        })}
+      </div>
+    </main>
   );
 }
 
